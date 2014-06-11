@@ -180,7 +180,7 @@ function comenzar() {
 
 		initAudio : function() {
 			var sound = document.createElement('audio');
-			sound.setAttribute('src', 'file:///android_asset/msc/wheel.mp3');
+			sound.setAttribute('src', 'http://siteate.com/2014/v0.5/msc/wheel.mp3');
 			wheel.sound = sound;
 		},
 
@@ -503,9 +503,11 @@ function sonar_musicapremio(flag) {
 	sonido.play();*/
 	var url;
 	if (flag)
-		url = 'file:///android_asset/msc/maquina.mp3';
+		//url = 'file:///android_asset/msc/maquina.mp3';
+		url = 'http://siteate.com/2014/v0.5/msc/maquina.mp3';
 	else
-		url = 'file:///android_asset/msc/fail.mp3';
+		url = 'http://siteate.com/2014/v0.5/msc/fail.mp3'
+		//url = 'file:///android_asset/msc/fail.mp3';
 	var sonido = new Media(url);
 	sonido.play();
 }
