@@ -501,9 +501,11 @@ function sonar_musicapremio(flag) {
 	else
 		sonido.setAttribute('src', 'file:///android_asset/msc/fail.mp3');
 	sonido.play();*/
+	var url;
 	if (flag)
-		var sonido = new Media('file:///android_asset/msc/maquina.mp3');
+		url = 'file:///android_asset/msc/maquina.mp3';
 	else
-		var sonido = new Media('file:///android_asset/msc/fail.mp3');
+		url = 'file:///android_asset/msc/fail.mp3';
+	var sonido = new Media(url);
 	sonido.play();
 }
