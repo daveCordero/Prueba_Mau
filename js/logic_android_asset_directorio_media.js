@@ -458,6 +458,7 @@ function resultado() {
 	var flag = true;
 	var sonido = document.createElement('audio');
 	sonido.setAttribute('src', 'http://www.siteate.com/2014/v0.5/msc/musica_premio.mp3');
+	sonido.play();
 	if( $("#premio").html() === "Porción pastel Hershey's") {
 		$("#premio").html("1 porción de pastel Hershey's");
 	} else 
