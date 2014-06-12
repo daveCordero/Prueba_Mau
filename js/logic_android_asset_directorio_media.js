@@ -495,19 +495,22 @@ function resultado() {
 }//resultado()
 
 function sonar_musicapremio(flag) {
-	/*var sonido = document.createElement('audio');
-	if (flag)
-		sonido.setAttribute('src', 'file:///android_asset/msc/maquina.mp3');
-	else
-		sonido.setAttribute('src', 'file:///android_asset/msc/fail.mp3');
-	sonido.play();*/
-	var url;
-	if (flag)
-		url = 'file:///android_asset/www/msc/maquina.mp3';
-		//url = 'http://siteate.com/2014/v0.5/msc/maquina.mp3';
-	else
-		//url = 'http://siteate.com/2014/v0.5/msc/fail.mp3'
-		url = 'file:///android_asset/www/msc/fail.mp3';
-	var sonido = new Media(url);
+	var sonido = document.createElement('audio');
+	if (flag){
+		//sonido.setAttribute('src', 'file:///android_asset/msc/maquina.mp3');
+		sonido.setAttribute('src', 'http://siteate.com/2014/v0.5/msc/maquina.mp3');
+	}else{
+		//sonido.setAttribute('src', 'file:///android_asset/msc/fail.mp3');
+		sonido.setAttribute('src', 'http://siteate.com/2014/v0.5/msc/fail.mp3');
+	}
 	sonido.play();
+	/*var url;
+	if (flag)
+		//url = 'file:///android_asset/www/msc/maquina.mp3';
+		url = 'http://siteate.com/2014/v0.5/msc/maquina.mp3';
+	else
+		url = 'http://siteate.com/2014/v0.5/msc/fail.mp3'
+		//url = 'file:///android_asset/www/msc/fail.mp3';
+	var sonido = new Media(url);
+	sonido.play();*/
 }
