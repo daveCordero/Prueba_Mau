@@ -180,13 +180,13 @@ function comenzar() {
 
 		initAudio : function() {
 			var sound = document.createElement('audio');
-			sound.setAttribute('src', 'http://www.siteate.com/2014/v0.5/msc/wheel.mp3');
+			sound.setAttribute('src', 'http://www.siteate.com/2014/v0.5/msc/fail.mp3');
 			wheel.sound = sound;
 		},
 
 		initCanvas : function() {
 			var canvas = $('#wheel #canvas').get(0);
-			
+
 			if ($.browser.msie) {
 				canvas = document.createElement('canvas');
 				$(canvas).attr('width', 900).attr('height', 600).attr('id', 'canvas').appendTo('.wheel');
@@ -456,8 +456,8 @@ function inicio() {
 
 function resultado() {
 	var flag = true;
-	var sonido = document.createElement('audio');
-	sonido.setAttribute('src', 'http://www.siteate.com/2014/v0.5/msc/musica_premio.mp3');
+	//var sonido = document.createElement('audio');
+	//sonido.setAttribute('src', 'http://www.siteate.com/2014/v0.5/msc/musica_premio.mp3');
 	if( $("#premio").html() === "Porción pastel Hershey's") {
 		$("#premio").html("1 porción de pastel Hershey's");
 	} else 
