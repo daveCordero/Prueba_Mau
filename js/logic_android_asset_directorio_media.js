@@ -182,7 +182,6 @@ function comenzar() {
 			var sound = document.createElement('audio');
 			sound.setAttribute('src', 'http://www.siteate.com/2014/v0.5/msc/wheel.mp3');
 			wheel.sound = sound;
-			sound.
 		},
 
 		initCanvas : function() {
