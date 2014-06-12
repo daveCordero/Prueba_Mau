@@ -486,7 +486,7 @@ function resultado() {
 		$("#mensaje_felicidades").css({ 'height':'345px' });
 		$("#mensaje_felicidades").css({ 'margin-top':'-175px' });
 	}
-	sonar_musicapremio(flag);
+	//sonar_musicapremio(flag);
 	if (flag){
 		$("#mensaje_felicidades").fadeIn();
 	}else{
