@@ -13,7 +13,7 @@ shuffle = function(o) {
 };
 
 String.prototype.hashCode = function(){
-	// See http://www.cse.yorku.ca/~oz/hash.html
+	//See http://www.cse.yorku.ca/~oz/hash.html
 	var hash = 5381;
 	for (i = 0; i < this.length; i++) {
 		char = this.charCodeAt(i);
