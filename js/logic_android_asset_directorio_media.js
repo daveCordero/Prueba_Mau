@@ -113,8 +113,8 @@ function comenzar() {
 				wheel.spinStart = new Date().getTime();
 				wheel.maxSpeed = Math.PI / (16 + Math.random()); // Randomly vary how hard the spin is
 				wheel.frames = 0;
-				wheel.sound.play();
-
+				//wheel.sound.play();
+				
 				wheel.timerHandle = setInterval(wheel.onTimerTick, wheel.timerDelay);
 			}
 		},
@@ -180,8 +180,9 @@ function comenzar() {
 
 		initAudio : function() {
 			var sound = document.createElement('audio');
-			sound.setAttribute('src', 'http://www.siteate.com/2014/v0.5/msc/fail.mp3');
+			sound.setAttribute('src', 'http://www.siteate.com/2014/v0.5/msc/wheel.mp3');
 			wheel.sound = sound;
+			sound.
 		},
 
 		initCanvas : function() {
