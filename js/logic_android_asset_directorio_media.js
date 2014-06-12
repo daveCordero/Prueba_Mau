@@ -186,7 +186,7 @@ function comenzar() {
 
 		initCanvas : function() {
 			var canvas = $('#wheel #canvas').get(0);
-
+			
 			if ($.browser.msie) {
 				canvas = document.createElement('canvas');
 				$(canvas).attr('width', 900).attr('height', 600).attr('id', 'canvas').appendTo('.wheel');
